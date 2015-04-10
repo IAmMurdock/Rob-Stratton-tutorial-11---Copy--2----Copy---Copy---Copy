@@ -1,8 +1,8 @@
-﻿Build started 10/04/2015 13:40:55.
-     1>Project "C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy\Rob Stratton default project.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/04/2015 14:56:36.
+     1>Project "C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy - Copy\Rob Stratton default project.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Model.cpp
-         Model.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SceneNode.cpp
+         SceneNode.cpp
      1>c:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(12): warning C4005: 'DXGI_STATUS_OCCLUDED' : macro redefinition
                  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50092) : see previous definition of 'DXGI_STATUS_OCCLUDED'
      1>c:\program files (x86)\microsoft directx sdk (june 2010)\include\dxgitype.h(13): warning C4005: 'DXGI_STATUS_CLIPPED' : macro redefinition
@@ -59,23 +59,19 @@
                  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50445) : see previous definition of 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
      1>c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3d10.h(609): warning C4005: 'D3D10_ERROR_FILE_NOT_FOUND' : macro redefinition
                  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50454) : see previous definition of 'D3D10_ERROR_FILE_NOT_FOUND'
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(245): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(246): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(248): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(263): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(281): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(302): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(323): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy\model.cpp(452): warning C4715: 'Model::CheckCollision' : not all control paths return a value
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy - copy\scenenode.cpp(56): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\murdock\google drive\3dgp\3dgp\rob stratton tutorial 11 - copy (2) - copy - copy - copy\scenenode.cpp(89): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy\Debug\Rob Stratton default project.exe" /INCREMENTAL /NOLOGO d3d11.lib d3dcompiler.lib dinput8.lib dxguid.lib d3dx11d.lib d3dx9d.lib dxerr.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy\Debug\Rob Stratton default project.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy\Debug\Rob Stratton default project.lib" /MACHINE:X86 Debug\camera.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy - Copy\Debug\Rob Stratton default project.exe" /INCREMENTAL /NOLOGO d3d11.lib d3dcompiler.lib dinput8.lib dxguid.lib d3dx11d.lib d3dx9d.lib dxerr.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy - Copy\Debug\Rob Stratton default project.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy - Copy\Debug\Rob Stratton default project.lib" /MACHINE:X86 Debug\camera.obj
          Debug\main.obj
          Debug\Model.obj
          Debug\objfilemodel.obj
+         Debug\SceneNode.obj
          Debug\text2D.obj
-         Rob Stratton default project.vcxproj -> C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy\Debug\Rob Stratton default project.exe
-     1>Done Building Project "C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy\Rob Stratton default project.vcxproj" (Build target(s)).
+         Rob Stratton default project.vcxproj -> C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy - Copy\Debug\Rob Stratton default project.exe
+     1>Done Building Project "C:\Users\Murdock\Google Drive\3DGP\3DGP\Rob Stratton tutorial 11 - Copy (2) - Copy - Copy - Copy\Rob Stratton default project.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.36
+Time Elapsed 00:00:01.50

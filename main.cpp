@@ -10,6 +10,7 @@
 #include "camera.h"
 #include "text2D.h"
 #include "Model.h"
+#include "SceneNode.h"
 
 //////////////////////////////////////////////////////////////////////////////////////
 //	Global Variables
@@ -43,6 +44,12 @@ Model* model_2;
 IDirectInput8* g_direct_input;
 IDirectInputDevice8* g_keyboard_device;
 unsigned char g_keyboard_keys_state[256];
+
+//scene nodes
+ 
+SceneNode* g_root_node;
+SceneNode* g_node1;
+SceneNode* g_node2;
 
 
 
@@ -489,6 +496,18 @@ HRESULT InitialiseGraphics()
 	model_2->LoadObjModel("assets/cube.obj");
 	model_2->setPosition(3, 2, 1);
 	HRESULT hr = S_OK;
+
+	g_root_node = new SceneNode();
+	g_node1 = new SceneNode();
+	g_node2 = new SceneNode();
+
+	g_node1->setModel(my_model);
+	g_node2->setModel(model_2);
+
+	g_root_node->addChildNode(g_node1);
+	g_node1->addChildNode(g_node2);
+
+	//TUTORIAL 14 EX13//
 
 	// Define vertices of a triangle - screen coordinates -1.0 to +1.0
 

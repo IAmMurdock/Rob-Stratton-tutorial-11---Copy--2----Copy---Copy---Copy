@@ -157,20 +157,11 @@ int Model::LoadObjModel(char* filename)
 }
 
 
-void Model::draw(XMMATRIX *view, XMMATRIX *projection)
+void Model::draw(XMMATRIX* world, XMMATRIX *view, XMMATRIX *projection)
 {
 
-	XMMATRIX world;
-
-	world *= XMMatrixTranslation(1, 0, 10);
-	world = XMMatrixRotationY(XMConvertToRadians(m_yangle));
-	world = XMMatrixScaling(m_scale, m_scale, m_scale);
-
-	MODEL_CONSTANT_BUFFER model_cb_values;
-
-
+	/*MODEL_CONSTANT_BUFFER model_cb_values;
 	
-
 	m_pImmediateContext->VSSetConstantBuffers(0, 1, &m_pConstantBuffer);
 	m_pImmediateContext->IASetInputLayout(m_pInputLayout);
 	m_pImmediateContext->VSSetShader(m_pVShader, 0, 0);
@@ -179,7 +170,21 @@ void Model::draw(XMMATRIX *view, XMMATRIX *projection)
 	m_pImmediateContext->UpdateSubresource(m_pConstantBuffer, 0, 0, &model_cb_values, 0, 0);
 
 
+	m_pObject->Draw();*/
+
+	MODEL_CONSTANT_BUFFER model_cb_values;
+	model_cb_values.WorldViewProjection = (*world)*(*view)*(*projection);
+	m_pImmediateContext->VSSetConstantBuffers(0, 1, &m_pConstantBuffer);
+	m_pImmediateContext->UpdateSubresource(m_pConstantBuffer, 0, 0, &model_cb_values, 0, 0);
+
+	m_pImmediateContext->VSSetShader(m_pVShader, 0, 0);
+	m_pImmediateContext->PSSetShader(m_pPShader, 0, 0);
+	m_pImmediateContext->IASetInputLayout(m_pInputLayout);
+	m_pImmediateContext->PSSetShaderResources(0, 1, &m_pTexture0);
+	m_pImmediateContext->PSSetSamplers(0, 1, &m_pSampler0);
+
 	m_pObject->Draw();
+
 }
 
 Model::~Model()

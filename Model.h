@@ -30,7 +30,7 @@ public:
 	Model(ID3D11Device* device, ID3D11DeviceContext* context);
 	~Model();
 	int LoadObjModel(char* filename);
-	void draw(XMMATRIX *view, XMMATRIX *projection);
+	void draw(XMMATRIX *world, XMMATRIX *view, XMMATRIX *projection);
 	void setPosition(float x, float y, float z);
 	void setRotation(float x, float y, float z);
 	void setScale(float value);

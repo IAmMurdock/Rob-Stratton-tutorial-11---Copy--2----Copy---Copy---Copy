@@ -79,6 +79,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="objfilemodel.cpp" />
+    <ClCompile Include="SceneNode.cpp" />
     <ClCompile Include="text2D.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +100,7 @@
     <ClInclude Include="camera.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="objfilemodel.h" />
+    <ClInclude Include="SceneNode.h" />
     <ClInclude Include="text2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
